@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED40DAA9-30C5-49DA-A473-988DB12C376F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laufmappe</RootNamespace>
+    <AssemblyName>Laufmappe</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddFolderAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFolderAction.Designer.cs">
+      <DependentUpon>frmAddFolderAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewUser.Designer.cs">
+      <DependentUpon>frmAddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateWorkflow.Designer.cs">
+      <DependentUpon>frmCreateWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditFolderActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditFolderActions.Designer.cs">
+      <DependentUpon>frmEditFolderActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditObjectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditObjectInfo.Designer.cs">
+      <DependentUpon>frmEditObjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchForMatchcodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchForMatchcodes.Designer.cs">
+      <DependentUpon>frmSearchForMatchcodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignMatchcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignMatchcode.Designer.cs">
+      <DependentUpon>frmAssignMatchcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatchcodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatchcodes.Designer.cs">
+      <DependentUpon>frmMatchcodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewDocumentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewDocumentInfo.Designer.cs">
+      <DependentUpon>frmAddNewDocumentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewMatchcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewMatchcode.Designer.cs">
+      <DependentUpon>frmAddNewMatchcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowDocumentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowDocumentInfo.Designer.cs">
+      <DependentUpon>frmShowDocumentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewDocument.Designer.cs">
+      <DependentUpon>frmAddNewDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewFolder.Designer.cs">
+      <DependentUpon>frmAddNewFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSqlHelper.cs" />
+    <Compile Include="frmPersonalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalData.Designer.cs">
+      <DependentUpon>frmPersonalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowFolderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowFolderHistory.Designer.cs">
+      <DependentUpon>frmShowFolderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowStaffData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowStaffData.Designer.cs">
+      <DependentUpon>frmShowStaffData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferFolder.Designer.cs">
+      <DependentUpon>frmTransferFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddFolderAction.resx">
+      <DependentUpon>frmAddFolderAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewUser.resx">
+      <DependentUpon>frmAddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateWorkflow.resx">
+      <DependentUpon>frmCreateWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditFolderActions.resx">
+      <DependentUpon>frmEditFolderActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditObjectInfo.resx">
+      <DependentUpon>frmEditObjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchForMatchcodes.resx">
+      <DependentUpon>frmSearchForMatchcodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssignMatchcode.resx">
+      <DependentUpon>frmAssignMatchcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatchcodes.resx">
+      <DependentUpon>frmMatchcodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewDocumentInfo.resx">
+      <DependentUpon>frmAddNewDocumentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewDocument.resx">
+      <DependentUpon>frmAddNewDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewFolder.resx">
+      <DependentUpon>frmAddNewFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewMatchcode.resx">
+      <DependentUpon>frmAddNewMatchcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowDocumentInfo.resx">
+      <DependentUpon>frmShowDocumentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonalData.resx">
+      <DependentUpon>frmPersonalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowFolderHistory.resx">
+      <DependentUpon>frmShowFolderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowStaffData.resx">
+      <DependentUpon>frmShowStaffData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferFolder.resx">
+      <DependentUpon>frmTransferFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty_Rubber_Recyling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save%284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Generic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Blue1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
